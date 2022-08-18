@@ -1,15 +1,17 @@
 .mission-card {
   align-content: space-around;
   align-items: flex-start;
-  border: 1px solid white;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 5px;
+  text-shadow: 1px 0px black;
+
 }
 
 .mission-card div {
   align-content: space-between;
+  border: 1px solid white;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -22,6 +24,7 @@
   color: white;
   display: flex;
   margin: 5px;
+  font-size: 20px;
 }
 
 .mission-card div p span {
