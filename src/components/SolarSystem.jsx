@@ -21,7 +21,7 @@ class SolarSystem extends React.Component {
     return (
       <div data-testid="solar-system">
         <Title headline={ headline } />
-        <section clasName="planet-section">
+        <section className="planet-section">
           {planets}
         </section>
 
