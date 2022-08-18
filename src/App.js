@@ -9,7 +9,7 @@ import './App.css';
 class App extends React.Component {
   render() {
     return (
-      <div className='App'>
+      <div className="App">
         <Header />
         <SolarSystem headline="Planetas" planetList={ planetList } />
         <Missions headline="Missões" missionList={ missionsList } />
