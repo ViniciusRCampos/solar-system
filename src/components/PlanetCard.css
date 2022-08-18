@@ -1,0 +1,17 @@
+.planet-cards {
+  align-content: space-around;
+  align-items: flex-start;
+  border: 1px solid white;
+  color: white;
+  display: inline-block;
+  flex-wrap: wrap;
+  font-size: 30px;
+  justify-content: space-around;
+  margin: 5px;
+  text-align: center;
+  width: 450px;
+}
+
+.planet-cards img {
+  width: 300px;
+}

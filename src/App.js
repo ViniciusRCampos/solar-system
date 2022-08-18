@@ -3,16 +3,16 @@ import Header from './components/Header';
 import SolarSystem from './components/SolarSystem';
 import planetList from './data/planets';
 import Missions from './components/Missions';
-import missionList from './data/missions';
+import missionsList from './data/missions';
+import './App.css';
 
 class App extends React.Component {
   render() {
-    console.log('APP', missionList);
     return (
-      <div>
+      <div className='App'>
         <Header />
         <SolarSystem headline="Planetas" planetList={ planetList } />
-        <Missions headline="Missões" missionList={ missionList } />
+        <Missions headline="Missões" missionList={ missionsList } />
       </div>
     );
   }
