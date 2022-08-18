@@ -6,8 +6,10 @@ import TerraImg from '../images/Terra.png';
 
 class SolarSystem extends React.Component {
   render() {
-    const { headline, planetList = [{ name: 'Terra', image: TerraImg }] } = this.props;
-    console.log(planetList);
+    const {
+      headline = 'Planetas',
+      planetList = [{ name: 'Terra', image: TerraImg }],
+    } = this.props;
     const planets = planetList.map((planet) => (
       <PlanetCard
         key={ planet.name }
