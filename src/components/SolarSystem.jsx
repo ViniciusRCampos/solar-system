@@ -1,16 +1,31 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
+import PropType from 'prop-types';
+import PlanetCard from './PlanetCard';
 import Title from './Title';
 
 class SolarSystem extends React.Component {
   render() {
+    const { headline, planetList } = this.props;
+    console.log(planetList);
+    const planets = planetList.map((planet) => (
+      <PlanetCard
+        key={ planet.name }
+        planetName={ planet.name }
+        planetImage={ planet.image }
+      />
+    ));
     return (
       <div data-testid="solar-system">
-        <Title headline="Planetas" />
+        <Title headline={ headline } />
+        {planets}
       </div>
     );
   }
 }
 
+SolarSystem.propTypes = {
+  headline: PropType.string.isRequired,
+  planetList: PropType.arrayOf(PropType.shape({})).isRequired,
+};
 
 export default SolarSystem;
