@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './components/Header';
 import SolarSystem from './components/SolarSystem';
 import planetList from './data/planets';
+import Missions from './components/Missions';
 
 class App extends React.Component {
   render() {
@@ -9,6 +10,7 @@ class App extends React.Component {
       <div>
         <Header />
         <SolarSystem headline="Planetas" planetList={ planetList } />
+        <Missions headline="Missões" />
       </div>
     );
   }
