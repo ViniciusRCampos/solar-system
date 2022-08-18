@@ -4,7 +4,7 @@ import Title from './Title';
 
 class Missions extends React.Component {
   render() {
-    const { headline } = this.props;
+    const { headline = 'Missões' } = this.props;
     return (
       <div data-testid="missions">
         <Title headline={ headline } />
