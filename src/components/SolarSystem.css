@@ -1,24 +1,23 @@
 .planet-section {
-    border: 1px solid black;
-    flex-wrap: wrap;
-    text-align: center;
-    margin: 5px;
-    align-content: space-around;
-    align-items: flex-start;
-    justify-content: space-around;
+  align-content: space-around;
+  align-items: flex-start;
+  border: 1px solid black;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 5px;
+  text-align: center;
 }
 
 h2 {
-    padding: 10px;
-    margin: 5px;
-    font-size: 60px;
-    text-align: center;
-    color: white;
+  color: white;
+  font-size: 60px;
+  margin: 5px;
+  padding: 10px;
+  text-align: center;
 }
 
-
-h1{
-    font-size: 80px;
-    text-align: center;
-    color: white;
+h1 {
+  color: white;
+  font-size: 80px;
+  text-align: center;
 }
