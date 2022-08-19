@@ -31,7 +31,6 @@ class SolarSystem extends React.Component {
 
 SolarSystem.propTypes = {
   headline: PropType.string.isRequired,
-  planetList: PropType.arrayOf(PropType.shape({})).isRequired,
 };
 
 export default SolarSystem;
