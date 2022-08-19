@@ -2,14 +2,13 @@ import React from 'react';
 import PropType from 'prop-types';
 import PlanetCard from './PlanetCard';
 import Title from './Title';
-import TerraImg from '../images/Terra.png';
 import './SolarSystem.css';
+import planetList from '../data/planets';
 
 class SolarSystem extends React.Component {
   render() {
     const {
       headline = 'Planetas',
-      planetList = [{ name: 'Terra', image: TerraImg }],
     } = this.props;
     const planets = planetList.map((planet) => (
       <PlanetCard
